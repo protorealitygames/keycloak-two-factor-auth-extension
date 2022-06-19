@@ -1,4 +1,4 @@
-package org.keycloak.examples.twofactorauth.rest;
+package org.prg.twofactorauth.rest;
 
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.UserModel;
@@ -27,6 +27,8 @@ public class TwoFactorAuthRestResource {
 
     private UserModel checkPermissionsAndGetUser(final String userid) {
         if (auth == null) {
+            var auth = new AppAuthManager.BearerTokenAuthenticator(session);
+            auth.authenticate();
             throw new NotAuthorizedException("Bearer");
         } else if (auth.getUser().getServiceAccountClientLink() == null) {
             throw new ForbiddenException("Not service account");

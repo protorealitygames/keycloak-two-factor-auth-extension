@@ -1,4 +1,4 @@
-package org.keycloak.examples.twofactorauth.dto;
+package org.prg.twofactorauth.dto;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

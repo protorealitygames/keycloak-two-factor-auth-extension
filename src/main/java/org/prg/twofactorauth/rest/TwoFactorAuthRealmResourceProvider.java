@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.keycloak.examples.twofactorauth.rest;
+package org.prg.twofactorauth.rest;
 
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.services.resource.RealmResourceProvider;

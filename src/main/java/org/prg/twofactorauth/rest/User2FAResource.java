@@ -1,11 +1,11 @@
-package org.keycloak.examples.twofactorauth.rest;
+package org.prg.twofactorauth.rest;
 
 import org.jboss.resteasy.annotations.cache.NoCache;
 import org.keycloak.credential.CredentialModel;
 import org.keycloak.credential.CredentialProvider;
-import org.keycloak.examples.twofactorauth.dto.TwoFactorAuthSecretData;
-import org.keycloak.examples.twofactorauth.dto.TwoFactorAuthSubmission;
-import org.keycloak.examples.twofactorauth.dto.TwoFactorAuthVerificationData;
+import org.prg.twofactorauth.dto.TwoFactorAuthSecretData;
+import org.prg.twofactorauth.dto.TwoFactorAuthSubmission;
+import org.prg.twofactorauth.dto.TwoFactorAuthVerificationData;
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.RealmModel;
 import org.keycloak.models.UserCredentialModel;
